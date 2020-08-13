@@ -52,19 +52,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Oef1Buttons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oef1Buttons.Designer.cs">
+      <DependentUpon>Oef1Buttons.cs</DependentUpon>
+    </Compile>
     <Compile Include="oefening 1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="oefening 1.Designer.cs">
       <DependentUpon>oefening 1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp.Designer.cs">
+      <DependentUpon>PopUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Oef1Buttons.resx">
+      <DependentUpon>Oef1Buttons.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="oefening 1.resx">
       <DependentUpon>oefening 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp.resx">
+      <DependentUpon>PopUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

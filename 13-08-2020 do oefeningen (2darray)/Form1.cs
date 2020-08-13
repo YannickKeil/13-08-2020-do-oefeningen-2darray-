@@ -24,7 +24,7 @@ namespace _13_08_2020_do_oefeningen__2darray_
 
         private void btnOef1_Click(object sender, EventArgs e)
         {
-            oefening_1 oef = new oefening_1();
+            Oef1Buttons oef = new Oef1Buttons();
             oef.Show();
         }
     }
