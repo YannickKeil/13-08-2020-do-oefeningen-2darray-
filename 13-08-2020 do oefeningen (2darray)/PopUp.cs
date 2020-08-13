@@ -26,6 +26,10 @@ namespace _13_08_2020_do_oefeningen__2darray_
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (tbNewName.Text == "")
+            {
+                tbNewName.Text = " ";
+            }
             Close();
         }
         public Oef1Buttons MyParentForm;

@@ -21,7 +21,11 @@ namespace _13_08_2020_do_oefeningen__2darray_
             PopUp pu = new PopUp();
             pu.MyParentForm = this;
             pu.ShowDialog();
-            (sender as Button).Text = pu.NewName;
+            if (pu.NewName !="")
+            {
+                (sender as Button).Text = pu.NewName;
+            }
+            
             
 
         }
