@@ -19,12 +19,12 @@ namespace _13_08_2020_do_oefeningen__2darray_
         private void newButton_Click(object sender, EventArgs e)
         {
             PopUp pu = new PopUp();
-            pu.MyParentForm = this;
-            pu.ShowDialog();
-            if (pu.NewName !="")
+            
+            if (pu.ShowDialog() == DialogResult.OK)
             {
-                (sender as Button).Text = pu.NewName;
+                (sender as Button).Text = pu.newAppointment;
             }
+
             
             
 
@@ -58,13 +58,7 @@ namespace _13_08_2020_do_oefeningen__2darray_
                     {
                         newArray[j, i] = "";
                     }
-                    //TextBox newTextBox = new TextBox();
-                    //newTextBox.Width = 80;
-                    //newTextBox.Height = 40;
-                    //newTextBox.Text = newArray[j, i];
-                    //newTextBox.BackColor = Color.White;
-                    //newTextBox.Name = $"button_{i}_{j}";
-                    //newTextBox.Location = new Point(10 + newTextBox.Width * i, 10 + newTextBox.Height * j);
+                   
                     Button newButton = new Button();
                     newButton.Width = 80;
                     newButton.Height = 40;
@@ -76,7 +70,7 @@ namespace _13_08_2020_do_oefeningen__2darray_
                     newButton.Click += new EventHandler(newButton_Click);
                     Controls.Add(newButton);
 
-                    //Controls.Add(newTextBox);
+                   
                     if (i == 0 && j >= 0)
                     {
                         newButton.Enabled = false;

@@ -39,7 +39,6 @@
             this.tbNewName.Name = "tbNewName";
             this.tbNewName.Size = new System.Drawing.Size(221, 26);
             this.tbNewName.TabIndex = 0;
-            this.tbNewName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnAdd
             // 
@@ -70,6 +69,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tbNewName);
             this.Name = "PopUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "PopUp";
             this.Load += new System.EventHandler(this.PopUp_Load);
             this.ResumeLayout(false);

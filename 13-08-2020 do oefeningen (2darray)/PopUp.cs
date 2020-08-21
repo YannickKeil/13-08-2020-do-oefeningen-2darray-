@@ -19,24 +19,16 @@ namespace _13_08_2020_do_oefeningen__2darray_
            
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (tbNewName.Text == "")
-            {
-                tbNewName.Text = " ";
-            }
-            Close();
+            newAppointment = tbNewName.Text;
+            this.DialogResult = DialogResult.OK;
         }
-        public Oef1Buttons MyParentForm;
-        public string NewName
-        {
-            get { return tbNewName.Text; }
-        }
+        
+        public string newAppointment;
+        
 
         private void PopUp_Load(object sender, EventArgs e)
         {
@@ -45,8 +37,7 @@ namespace _13_08_2020_do_oefeningen__2darray_
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            tbNewName.Text = "";
-            Close();
+            this.DialogResult = DialogResult.Cancel;
         }
     }
 }

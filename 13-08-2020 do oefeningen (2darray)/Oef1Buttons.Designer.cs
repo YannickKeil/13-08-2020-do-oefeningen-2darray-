@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Oef1Buttons";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Oef1Buttons";
             this.Load += new System.EventHandler(this.Oef1Buttons_Load);
             this.ResumeLayout(false);
